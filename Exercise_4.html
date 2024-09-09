@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Exercise_4.css">
+</head>
+<body>
+    <select id="select" onchange="shipment()">
+        <option value="choose" disabled selected>choose the type of shipment</option>
+        <option value="standard">standard(7 days)</option>
+        <option value="express">express(3 days)</option>
+    </select><br><br><br>
+    
+    <label id="orderDate">order date:</label><br>
+    <label id="expectedDate">expected date of delivery:</label><br>
+    <label id="fee">delivery fee:</label><br><br>
+
+    <div id="div" style="height: 400px; width: 400px; border: 1px solid black;"></div><br>
+    <input type="radio" name="radio" value="iphone_se"> iPhone SE 64GB Red
+    <br>
+    <input type="radio" name="radio" value="iphone_11">iPhone 11 128GB Black
+    <br>
+    <input type="radio" name="radio" value="iphone_8"> iPhone 8 Plus 64GB Silver
+    <button onclick="phoneStatus()">show</button>
+
+    <script src="Exercise_4.js"></script>
+</body>
+</html>
